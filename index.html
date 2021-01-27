@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+    <div id="app">
+       <p>This is first instance {{ value }}</p>
+       <button @click="click">Click</button>
+       <button @click="valueChange">Click to access 2nd instance</button>
+    </div>
+<hr>
+    <div id="app2">
+       <p>This is first instance {{ value }}</p>
+       <button @click="click">Click</button>
+       <button @click="valueChange">Click to access 1st instance</button>
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>
